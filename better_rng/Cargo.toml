@@ -1,0 +1,16 @@
+[package]
+name = "better_rng"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["dylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+auxtools = { git = "https://github.com/willox/auxtools", default-features = false }
+detour = { version = "0.8.1", default-features = false }
+rand = "0.8.5"
+rand_chacha = "0.3.1"
+rand_core = "0.6.4"
